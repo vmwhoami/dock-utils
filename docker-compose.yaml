@@ -1,8 +1,14 @@
 version: '3.9'
+# Create 
 services:
-  npm:
+  somecommand:
     build: ./
+    # Sdin_open 
+    
     stdin_open: true
     tty: true
     volumes:
       - ./:/app
+
+# Run the command docker-compose run somecommand init - In this example npm is the name of the service 
+# where the ENTRYPOINT is npm from dockcer file
